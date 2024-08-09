@@ -247,6 +247,10 @@ const css = {
     },
   },
   list: {
-    marginBottom: "100px",
+    marginBottom: {
+      base: "20px",
+      sm: "48px",
+      md: "100px",
+    },
   },
 };

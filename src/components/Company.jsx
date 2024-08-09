@@ -104,7 +104,7 @@ function Company() {
         </Flex>
         <SimpleGrid
           columns={{ base: 2, sm: 3 }}
-          display={{ base: "none", sm: "grid", xl: "none" }}
+          display={{ base: "none", sm: "grid", lg: "none" }}
           mt={"40px"}
           gap={{ base: "20px" }}>
           <Flex
