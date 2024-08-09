@@ -159,7 +159,10 @@ const css = {
     flexDirection: "column",
     marginTop: "16px",
     position: "relative",
-    left: "180px",
+    left: {
+      base: "180px",
+      sm: "400px",
+    },
   },
   span: {
     background: "#384D8B",
@@ -174,22 +177,26 @@ const css = {
     },
     display: {
       base: "none",
-      sm: "flex",
+      md: "flex",
     },
     alignItems: "center",
     justifyContent: "center",
     cursor: "pointer",
     flexDirection: "column",
-    margin:"8px 0"
+    margin: "8px 0",
   },
   bottom: {
     position: "absolute",
     bottom: "66px",
-    right: "0",
+    right: {
+      base: "0",
+      sm: "-400px",
+      md: "0",
+    },
     gap: "16px",
     display: {
       base: "none",
-      sm: "block",
+      md: "block",
     },
   },
   camera: {
@@ -219,13 +226,13 @@ const css = {
     },
     display: {
       base: "flex",
-      sm: "none",
+      md: "none",
     },
     alignItems: "center",
     justifyContent: "center",
     cursor: "pointer",
     flexDirection: "column",
-    margin:"8px 0"
+    margin: "8px 0",
   },
   bottoms: {
     position: "absolute",
@@ -235,11 +242,12 @@ const css = {
     },
     right: {
       base: "-180px",
+      sm: "-420px",
     },
     gap: "16px",
     display: {
       base: "block",
-      sm: "none",
+      md: "none",
     },
   },
 };
