@@ -143,9 +143,11 @@ const css = {
       base: "14px",
       md: "15px",
     },
+    border: "2px solid #384D8B",
 
     _hover: {
-      background: "#384D8B",
+      background: "#fff",
+      color: "#384D8B",
     },
   },
   subtext: {
