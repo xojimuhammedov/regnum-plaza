@@ -1,29 +1,32 @@
 import { Box, Heading, Image, SimpleGrid } from "@chakra-ui/react";
 import HouseImage from "../assets/house.png";
+import { Fade } from "react-reveal";
 
 function House() {
   return (
     <Box p={{ base: "24px 0", md: "46px 0" }}>
       <Box className="container">
         <Heading {...css.title}>Qurilish jarayoni</Heading>
-        <SimpleGrid gap={"15px"} mt={"36px"} columns={{ base: 1, sm: 4 }}>
-          <Box>
-            <Image {...css.image} src={HouseImage} />
-            <Heading {...css.subname}>Iyun</Heading>
-          </Box>
-          <Box>
-            <Image {...css.image} src={HouseImage} />
-            <Heading {...css.subname}>Iyun</Heading>
-          </Box>
-          <Box>
-            <Image {...css.image} src={HouseImage} />
-            <Heading {...css.subname}>Iyun</Heading>
-          </Box>
-          <Box>
-            <Image {...css.image} src={HouseImage} />
-            <Heading {...css.subname}>Iyun</Heading>
-          </Box>
-        </SimpleGrid>
+        <Fade bottom>
+          <SimpleGrid gap={"15px"} mt={"36px"} columns={{ base: 1, sm: 4 }}>
+            <Box>
+              <Image {...css.image} src={HouseImage} />
+              <Heading {...css.subname}>Iyun</Heading>
+            </Box>
+            <Box>
+              <Image {...css.image} src={HouseImage} />
+              <Heading {...css.subname}>Iyun</Heading>
+            </Box>
+            <Box>
+              <Image {...css.image} src={HouseImage} />
+              <Heading {...css.subname}>Iyun</Heading>
+            </Box>
+            <Box>
+              <Image {...css.image} src={HouseImage} />
+              <Heading {...css.subname}>Iyun</Heading>
+            </Box>
+          </SimpleGrid>
+        </Fade>
       </Box>
     </Box>
   );

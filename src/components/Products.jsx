@@ -76,8 +76,7 @@ const css = {
       lg: "32px",
     },
     paddingRight: {
-      base: "8px",
-      sm: "16px",
+      base: "16px",
       md: "24px",
     },
   },
@@ -86,7 +85,7 @@ const css = {
     borderRadius: "32px",
     color: "white",
     fontSize: {
-      base: "14px",
+      base: "12px",
       md: "16px",
       lg: "18px",
     },

@@ -2,107 +2,112 @@ import { Box, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import LocationBanner from "../assets/location-banner.png";
 import OneImage from "../assets/01.svg";
 import LocationIcon from "../assets/Group.svg";
+import { Fade } from "react-reveal";
 
 function Architexture() {
   return (
     <Box {...css.box}>
       <Box className="container">
-        <Flex
-          align={"center"}
-          flexDirection={{ base: "column-reverse", sm: "row" }}
-          width={"100%"}
-          gap={"32px"}
-          justifyContent={"space-between"}>
-          <Box {...css.image}>
-            <Image {...css.images} src={LocationBanner} />
-            <Box {...css.right}>
-              <Box {...css.span}>
-                <Image src={LocationIcon} />
+        <Fade bottom>
+          <Flex
+            align={"center"}
+            flexDirection={{ base: "column-reverse", sm: "row" }}
+            width={"100%"}
+            gap={"32px"}
+            justifyContent={"space-between"}>
+            <Box {...css.image}>
+              <Image {...css.images} src={LocationBanner} />
+              <Box {...css.right}>
+                <Box {...css.span}>
+                  <Image src={LocationIcon} />
+                </Box>
+                <Text {...css.subtext}>
+                  NRG Qorasuv - bu Yevropa va Sharq uslublarini birgalikda
+                  qollash orqali ishlab chigilgan eksklyuziv mualliflik dizayni.
+                </Text>
               </Box>
-              <Text {...css.subtext}>
-                NRG Qorasuv - bu Yevropa va Sharq uslublarini birgalikda qollash
-                orqali ishlab chigilgan eksklyuziv mualliflik dizayni.
-              </Text>
             </Box>
-          </Box>
-          <Box>
-            <Heading {...css.title}>Majmua arxitekturasi</Heading>
-            <Text {...css.text}>
-              Majmua mutlaq xavfsiz va erkin hudud sifatida chuqur o`ylangan.
-              Hech ganday begona kishilar va chagirilmagan mehmonlar.
-            </Text>
-            <Text {...css.text}>
-              Hovlilarda avtomashina bo`lmaydi. Ishga mahorat ila yondashuv,
-              barcha tafsilotlarga e tiborli bo`lish va qurilish
-              materiallarining maxsus tanlovi mualliflar g`oyalarining amalga
-              oshishi uchun ishonchli kafolatdir.
-            </Text>
-            <SimpleGrid
-              display={{ base: "grid", sm: "none", lg: "grid" }}
-              mt={"40px"}
-              gap={{ base: "20px", md: "0" }}
-              columns={{ base: 1, lg: 3 }}>
-              <Flex
-                align={{ base: "center", md: "baseline" }}
-                flexDirection={{ base: "row", md: "column" }}
-                gap={"12px"}>
-                <Image {...css.icon} src={OneImage} alt="OneImage" />
-                <Text {...css.subname}>
-                  Ventilyatsiya qurilmasiga ega fasad
-                </Text>
-              </Flex>
-              <Flex
-                align={{ base: "center", md: "baseline" }}
-                flexDirection={{ base: "row", md: "column" }}
-                gap={"12px"}>
-                <Image {...css.icon} src={OneImage} alt="OneImage" />
-                <Text {...css.subname}>
-                  Manolit karkas va xonalararo g‘isht devorlar
-                </Text>
-              </Flex>
-              <Flex
-                align={{ base: "center", md: "baseline" }}
-                flexDirection={{ base: "row", md: "column" }}
-                gap={"12px"}>
-                <Image {...css.icon} src={OneImage} alt="OneImage" />
-                <Text {...css.subname}>
-                  Sovuq o‘tkazmaydigan metalloplastik profil
-                </Text>
-              </Flex>
-            </SimpleGrid>
-          </Box>
-        </Flex>
-        <SimpleGrid
-          display={{ base: "none", sm: "grid", xl: "none" }}
-          mt={"40px"}
-          gap={{ base: "20px", md: "0" }}
-          columns={3}>
-          <Flex
-            align={{ base: "center", sm: "start" }}
-            flexDirection={{ base: "row", sm: "column" }}
-            gap={"12px"}>
-            <Image {...css.icon} src={OneImage} alt="OneImage" />
-            <Text {...css.subname}>Ventilyatsiya qurilmasiga ega fasad</Text>
+            <Box>
+              <Heading {...css.title}>Majmua arxitekturasi</Heading>
+              <Text {...css.text}>
+                Majmua mutlaq xavfsiz va erkin hudud sifatida chuqur o`ylangan.
+                Hech ganday begona kishilar va chagirilmagan mehmonlar.
+              </Text>
+              <Text {...css.text}>
+                Hovlilarda avtomashina bo`lmaydi. Ishga mahorat ila yondashuv,
+                barcha tafsilotlarga e tiborli bo`lish va qurilish
+                materiallarining maxsus tanlovi mualliflar g`oyalarining amalga
+                oshishi uchun ishonchli kafolatdir.
+              </Text>
+              <SimpleGrid
+                display={{ base: "grid", sm: "none", lg: "grid" }}
+                mt={"40px"}
+                gap={{ base: "20px", md: "0" }}
+                columns={{ base: 1, lg: 3 }}>
+                <Flex
+                  align={{ base: "center", md: "baseline" }}
+                  flexDirection={{ base: "row", md: "column" }}
+                  gap={"12px"}>
+                  <Image {...css.icon} src={OneImage} alt="OneImage" />
+                  <Text {...css.subname}>
+                    Ventilyatsiya qurilmasiga ega fasad
+                  </Text>
+                </Flex>
+                <Flex
+                  align={{ base: "center", md: "baseline" }}
+                  flexDirection={{ base: "row", md: "column" }}
+                  gap={"12px"}>
+                  <Image {...css.icon} src={OneImage} alt="OneImage" />
+                  <Text {...css.subname}>
+                    Manolit karkas va xonalararo g‘isht devorlar
+                  </Text>
+                </Flex>
+                <Flex
+                  align={{ base: "center", md: "baseline" }}
+                  flexDirection={{ base: "row", md: "column" }}
+                  gap={"12px"}>
+                  <Image {...css.icon} src={OneImage} alt="OneImage" />
+                  <Text {...css.subname}>
+                    Sovuq o‘tkazmaydigan metalloplastik profil
+                  </Text>
+                </Flex>
+              </SimpleGrid>
+            </Box>
           </Flex>
-          <Flex
-            align={{ base: "center", sm: "start" }}
-            flexDirection={{ base: "row", sm: "column" }}
-            gap={"12px"}>
-            <Image {...css.icon} src={OneImage} alt="OneImage" />
-            <Text {...css.subname}>
-              Manolit karkas va xonalararo g‘isht devorlar
-            </Text>
-          </Flex>
-          <Flex
-            align={{ base: "center", sm: "start" }}
-            flexDirection={{ base: "row", sm: "column" }}
-            gap={"12px"}>
-            <Image {...css.icon} src={OneImage} alt="OneImage" />
-            <Text {...css.subname}>
-              Sovuq o‘tkazmaydigan metalloplastik profil
-            </Text>
-          </Flex>
-        </SimpleGrid>
+        </Fade>
+        <Fade bottom>
+          <SimpleGrid
+            display={{ base: "none", sm: "grid", xl: "none" }}
+            mt={"40px"}
+            gap={{ base: "20px", md: "0" }}
+            columns={3}>
+            <Flex
+              align={{ base: "center", sm: "start" }}
+              flexDirection={{ base: "row", sm: "column" }}
+              gap={"12px"}>
+              <Image {...css.icon} src={OneImage} alt="OneImage" />
+              <Text {...css.subname}>Ventilyatsiya qurilmasiga ega fasad</Text>
+            </Flex>
+            <Flex
+              align={{ base: "center", sm: "start" }}
+              flexDirection={{ base: "row", sm: "column" }}
+              gap={"12px"}>
+              <Image {...css.icon} src={OneImage} alt="OneImage" />
+              <Text {...css.subname}>
+                Manolit karkas va xonalararo g‘isht devorlar
+              </Text>
+            </Flex>
+            <Flex
+              align={{ base: "center", sm: "start" }}
+              flexDirection={{ base: "row", sm: "column" }}
+              gap={"12px"}>
+              <Image {...css.icon} src={OneImage} alt="OneImage" />
+              <Text {...css.subname}>
+                Sovuq o‘tkazmaydigan metalloplastik profil
+              </Text>
+            </Flex>
+          </SimpleGrid>
+        </Fade>
       </Box>
     </Box>
   );

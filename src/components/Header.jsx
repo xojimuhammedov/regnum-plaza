@@ -209,11 +209,11 @@ const css = {
     background: "#384D8B",
     borderRadius: "28px",
     width: {
-      base: "32px",
+      base: "40px",
       md: "56px",
     },
     height: {
-      base: "32px",
+      base: "40px",
       md: "56px",
     },
     display: {
@@ -224,6 +224,7 @@ const css = {
     justifyContent: "center",
     cursor: "pointer",
     flexDirection: "column",
+    margin:"8px 0"
   },
   bottoms: {
     position: "absolute",
