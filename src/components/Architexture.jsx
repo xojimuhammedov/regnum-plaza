@@ -181,7 +181,7 @@ const css = {
     width: "100%",
     height: {
       base: "343px",
-      sm: "380px",
+      sm: "300px",
       lg: "466px",
     },
     objectFit: {
