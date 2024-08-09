@@ -11,11 +11,16 @@ import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 import Section from "./components/Section";
 
+import MainBanner from "./assets/main.jpg";
+
 function App() {
   return (
     <>
+      <Navbar />
       <div className="home-menu">
-        <Navbar />
+        <div className="main-bg">
+          <img src={MainBanner} alt="Main Banner" />
+        </div>
         <Header />
       </div>
       <Company />

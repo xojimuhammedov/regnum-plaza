@@ -4,54 +4,50 @@ import GlobusIcon from "../assets/globus.svg";
 
 function Header() {
   return (
-    <Box mt={{ base: "130px", sm: "400px", md: "410px", lg: "490px" }}>
-      <Box className="container">
-        <Box {...css.list}>
-          <Heading {...css.title}>
-            Baxtli hayot maskaniga xush kelibsiz!
-          </Heading>
+    <Box className="container">
+      <Box {...css.list}>
+        <Heading {...css.title}>Baxtli hayot maskaniga xush kelibsiz!</Heading>
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          align={{ base: "start", md: "center" }}
+          justifyContent={"space-between"}>
+          <Text {...css.text}>
+            NRG JOMIY - NRGning yangi biznes-klass turarjoy majmuasi, mashhur
+            o`rtaosiyolik shoir Abdurahmon Jomiy sharafiga atalgan.
+          </Text>
           <Flex
-            flexDirection={{ base: "column", md: "row" }}
-            align={{ base: "start", md: "center" }}
-            justifyContent={"space-between"}>
-            <Text {...css.text}>
-              NRG JOMIY - NRGning yangi biznes-klass turarjoy majmuasi, mashhur
-              o`rtaosiyolik shoir Abdurahmon Jomiy sharafiga atalgan.
-            </Text>
-            <Flex
-              position={"relative"}
-              align={"center"}
-              // display={{ base: "none", md: "flex" }}
-              gap={"12px"}>
-              <Text {...css.button}>Rejalashtirishni tanlash</Text>
-              <Text {...css.buttons}>Rejalashtirishni tanlash</Text>
+            position={"relative"}
+            align={"center"}
+            // display={{ base: "none", md: "flex" }}
+            gap={"12px"}>
+            <Text {...css.button}>Rejalashtirishni tanlash</Text>
+            <Text {...css.buttons}>Rejalashtirishni tanlash</Text>
+            <Box {...css.span}>
+              <Image w={"32px"} h={"32px"} src={PhoneIcon} />
+            </Box>
+            <Flex {...css.bottom} flexDirection={"column"}>
               <Box {...css.span}>
-                <Image w={"32px"} h={"32px"} src={PhoneIcon} />
+                <Text {...css.camera}>Jonli efir</Text>
               </Box>
-              <Flex {...css.bottom} flexDirection={"column"}>
-                <Box {...css.span}>
-                  <Text {...css.camera}>Jonli efir</Text>
-                </Box>
-                <Box {...css.span}>
-                  <Image w={"22px"} h={"22px"} src={GlobusIcon} />
-                  <Text {...css.camera}>360</Text>
-                </Box>
-              </Flex>
-              <Flex {...css.bottoms} flexDirection={"column"}>
-                <Box {...css.spans}>
-                  <Text {...css.camera}>Jonli efir</Text>
-                </Box>
-                <Box {...css.spans}>
-                  <Image w={"19px"} h={"19px"} src={GlobusIcon} />
-                  <Text {...css.camera}>360</Text>
-                </Box>
-                <Box {...css.spans}>
-                  <Image w={"24px"} h={"24px"} src={PhoneIcon} />
-                </Box>
-              </Flex>
+              <Box {...css.span}>
+                <Image w={"22px"} h={"22px"} src={GlobusIcon} />
+                <Text {...css.camera}>360</Text>
+              </Box>
+            </Flex>
+            <Flex {...css.bottoms} flexDirection={"column"}>
+              <Box {...css.spans}>
+                <Text {...css.camera}>Jonli efir</Text>
+              </Box>
+              <Box {...css.spans}>
+                <Image w={"19px"} h={"19px"} src={GlobusIcon} />
+                <Text {...css.camera}>360</Text>
+              </Box>
+              <Box {...css.spans}>
+                <Image w={"24px"} h={"24px"} src={PhoneIcon} />
+              </Box>
             </Flex>
           </Flex>
-        </Box>
+        </Flex>
       </Box>
     </Box>
   );
@@ -249,5 +245,8 @@ const css = {
       base: "block",
       md: "none",
     },
+  },
+  list: {
+    marginBottom: "100px",
   },
 };

@@ -1,9 +1,10 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Image } from "@chakra-ui/react";
 import LocationImage from "../assets/location.png";
 
 function Location() {
   return (
     <Box {...css.location}>
+      <Image {...css.image} src={LocationImage} />
       <Box className="container">
         <Heading {...css.title}>Bloklar joylashuvi</Heading>
       </Box>
@@ -26,14 +27,22 @@ const css = {
     },
     fontWeight: "600 !important",
     paddingTop: "44px",
+    position: "absolute",
+    top: {
+      base: "0px",
+      md: "32px",
+    },
   },
   location: {
-    backgroundImage: `url(${LocationImage})`,
-    backgroundSize: "cover",
+    position: "relative",
     height: {
-      base: "400px",
-      md: "454px",
-      lg: "700px",
+      base: "70vh",
+      md: "100vh",
     },
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
   },
 };

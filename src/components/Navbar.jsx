@@ -6,7 +6,7 @@ import NavbarMenu from "./NavbarMenu";
 
 function Navbar() {
   return (
-    <Box pt={"26px"}>
+    <Box className="navbar-menu">
       <Box className="container">
         <Flex {...css.list}>
           <Flex gap={"50px"} align={"center"}>
