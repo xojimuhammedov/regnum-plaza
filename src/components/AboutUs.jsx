@@ -1,6 +1,5 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import AboutUsImage from "../assets/contacts.png";
-import { Fade } from "react-reveal";
 
 function AboutUs() {
   return (
@@ -10,44 +9,40 @@ function AboutUs() {
           flexDirection={{ base: "column", sm: "row" }}
           width={"100%"}
           justifyContent={"space-between"}>
-          <Fade left>
-            <Box>
-              <Heading {...css.title}>Quruvchi kompaniya to‘g‘risida</Heading>
-              <Text {...css.text}>
-                Sizning uyingizda hozirdan baxtli oilalar yashamoqdalar,
-                bolajonlar birinchi do`stlarini topmoqdalar va do stona
-                qo`shnichilik madaniyati gullab-yashnamoqda.
-              </Text>
-              <Text {...css.text}>
-                NRG - O`zbekiston va Qozog`iston qardosh xalqlarining do`stligi
-                va madaniy birligining, hamfikrlilik ittifogining yaggol
-                tasdig`idir. Biz o`zbek xalgining ko`p asrlik eng zo`r me`moriy
-                ananalari bilan Qozog`istonning ilg`or qurilish tajribasini
-                mujassamlashtirmoqdamiz.
-              </Text>
-              <Text {...css.text}>
-                Biz hayot uchun qulay makon barpo etmoqdamiz, 24/7 sifatli
-                servis va maishiy masalalarda kafolatlangan yordam taqdim etamiz
-              </Text>
-              <Flex gap={"16px"} mt={"32px"}>
-                <Box>
-                  <Heading {...css.number}>1684+</Heading>
-                  <Text {...css.subname}>Oila bizning uylarda yashamoqda</Text>
-                </Box>
-                <Box>
-                  <Heading {...css.number}>188 430+ m</Heading>
-                  <Text {...css.subname}>
-                    Xonadonlar qurib bitkazilib o‘z egalariga topshirildi
-                  </Text>
-                </Box>
-              </Flex>
-            </Box>
-          </Fade>
-          <Fade right>
-            <Box {...css.image}>
-              <Image {...css.images} src={AboutUsImage} alt="AboutUsImage" />
-            </Box>
-          </Fade>
+          <Box>
+            <Heading {...css.title}>Quruvchi kompaniya to‘g‘risida</Heading>
+            <Text {...css.text}>
+              Sizning uyingizda hozirdan baxtli oilalar yashamoqdalar,
+              bolajonlar birinchi do`stlarini topmoqdalar va do stona
+              qo`shnichilik madaniyati gullab-yashnamoqda.
+            </Text>
+            <Text {...css.text}>
+              NRG - O`zbekiston va Qozog`iston qardosh xalqlarining do`stligi va
+              madaniy birligining, hamfikrlilik ittifogining yaggol tasdig`idir.
+              Biz o`zbek xalgining ko`p asrlik eng zo`r me`moriy ananalari bilan
+              Qozog`istonning ilg`or qurilish tajribasini
+              mujassamlashtirmoqdamiz.
+            </Text>
+            <Text {...css.text}>
+              Biz hayot uchun qulay makon barpo etmoqdamiz, 24/7 sifatli servis
+              va maishiy masalalarda kafolatlangan yordam taqdim etamiz
+            </Text>
+            <Flex gap={"16px"} mt={"32px"}>
+              <Box>
+                <Heading {...css.number}>1684+</Heading>
+                <Text {...css.subname}>Oila bizning uylarda yashamoqda</Text>
+              </Box>
+              <Box>
+                <Heading {...css.number}>188 430+ m</Heading>
+                <Text {...css.subname}>
+                  Xonadonlar qurib bitkazilib o‘z egalariga topshirildi
+                </Text>
+              </Box>
+            </Flex>
+          </Box>
+          <Box {...css.image}>
+            <Image {...css.images} src={AboutUsImage} alt="AboutUsImage" />
+          </Box>
         </Flex>
       </Box>
     </Box>
