@@ -180,6 +180,7 @@ const css = {
     justifyContent: "center",
     cursor: "pointer",
     flexDirection: "column",
+    margin:"8px 0"
   },
   bottom: {
     position: "absolute",

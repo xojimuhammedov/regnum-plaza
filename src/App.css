@@ -28,6 +28,12 @@
   border-right: 1px solid #dcdcdc;
 }
 
+.navbar-modal {
+  margin: 0 !important;
+  height: 100vh !important;
+  background: #384D8B !important;
+}
+
 @media (max-width: 950px) {
   .home-menu {
     height: 640px;
@@ -39,9 +45,9 @@
   .home-menu {
     height: 445px;
     background-size: cover;
-    background-image: url('./assets/mobile-img.png');
+    background-image: url("./assets/mobile-img.png");
   }
-  .products-catalog{
+  .products-catalog {
     display: none;
   }
 }
