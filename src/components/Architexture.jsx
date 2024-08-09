@@ -2,13 +2,11 @@ import { Box, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import LocationBanner from "../assets/location-banner.png";
 import OneImage from "../assets/01.svg";
 import LocationIcon from "../assets/Group.svg";
-import { Fade } from "react-reveal";
 
 function Architexture() {
   return (
     <Box {...css.box}>
       <Box className="container">
-        <Fade bottom>
           <Flex
             align={"center"}
             flexDirection={{ base: "column-reverse", sm: "row" }}
@@ -74,7 +72,6 @@ function Architexture() {
               </SimpleGrid>
             </Box>
           </Flex>
-        </Fade>
         <SimpleGrid
           display={{ base: "none", sm: "grid", xl: "none" }}
           mt={"40px"}

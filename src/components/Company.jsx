@@ -106,7 +106,7 @@ function Company() {
           columns={{ base: 2, sm: 3 }}
           display={{ base: "none", sm: "grid", xl: "none" }}
           mt={"40px"}
-          gap={{ base: "20px", md: "0" }}>
+          gap={{ base: "20px" }}>
           <Flex
             align={{ base: "baseline", sm: "center" }}
             flexDirection={{ base: "column", sm: "row" }}
