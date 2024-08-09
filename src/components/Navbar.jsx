@@ -2,6 +2,7 @@ import { Box, Flex, Link, Image, Text } from "@chakra-ui/react";
 import RegnumPlaza from "../assets/logo.svg";
 import PhoneIcon from "../assets/phone.svg";
 import DownloadIcon from "../assets/download.svg";
+import NavbarMenu from "./NavbarMenu";
 
 function Navbar() {
   return (
@@ -39,7 +40,7 @@ function Navbar() {
               </Link>
             </Flex>
           </Flex>
-          <Flex gap={"26px"} align={"center"}>
+          <Flex gap={{ base: "12px", md: "26px" }} align={"center"}>
             <Flex gap={"10px"} align={"center"}>
               <Image w={"26px"} h={"26px"} src={PhoneIcon} />
               <Link {...css.number} href="tel:1066">
@@ -55,6 +56,9 @@ function Navbar() {
                 Taqdimot <Text {...css.hajm}>5.3 mb yuklab olish</Text>
               </Text>
             </Flex>
+            <Box display={{ base: "block", md: "none" }}>
+              <NavbarMenu />
+            </Box>
           </Flex>
         </Flex>
       </Box>
