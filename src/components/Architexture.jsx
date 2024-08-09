@@ -223,7 +223,8 @@ const css = {
     left: {
       base: "0",
       md: "50px",
-      lg: "100px",
+      lg: "0px",
+      xl: "50px",
       "2xl": "190px",
     },
     bottom: {

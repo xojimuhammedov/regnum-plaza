@@ -230,7 +230,8 @@ const css = {
     right: {
       base: "0px",
       sm: "30px",
-      lg: "120px",
+      lg: "20px",
+      xl: "180px",
       "2xl": "190px",
     },
     bottom: {

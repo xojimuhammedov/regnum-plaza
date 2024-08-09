@@ -78,7 +78,8 @@ const css = {
     fontSize: {
       base: "16px",
       md: "12px",
-      lg: "15px",
+      lg:"14px",
+      xl: "15px",
     },
     lineHeight: "20px",
     fontWeight: "400",
