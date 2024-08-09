@@ -75,7 +75,7 @@ const css = {
     },
     fontWeight: "600 !important",
     width: {
-      base: "80%",
+      base: "85%",
       sm: "50%",
       md: "686px",
     },

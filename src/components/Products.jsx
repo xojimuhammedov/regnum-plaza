@@ -65,11 +65,11 @@ const css = {
     background: "#F6F6F4",
     borderRadius: "32px",
     padding: "4px",
-    height: {
-      base: "40px",
-      sm: "48px",
-      md: "64px",
-    },
+    // height: {
+    //   base: "40px",
+    //   sm: "48px",
+    //   md: "64px",
+    // },
     alignItems: "center",
     gap: {
       base: "20px",
@@ -110,7 +110,7 @@ const css = {
     // fontSize: "20px",
     // lineHeight: "26px",
     fontSize: {
-      base: "14px",
+      base: "12px",
       md: "16px",
       lg: "18px",
       "2xl": "20px",
