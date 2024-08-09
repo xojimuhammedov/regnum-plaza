@@ -100,7 +100,7 @@
   margin: 0 !important;
   height: 100vh !important;
   background: #384d8b !important;
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 @keyframes scale {

@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import AboutUsImage from "../assets/contacts.png";
+import LocationBanner from "../assets/location-banner.png";
 
 function AboutUs() {
   return (
@@ -41,7 +42,18 @@ function AboutUs() {
             </Flex>
           </Box>
           <Box {...css.image}>
-            <Image {...css.images} src={AboutUsImage} alt="AboutUsImage" />
+            <Image
+              display={{ base: "none", sm: "block" }}
+              {...css.images}
+              src={AboutUsImage}
+              alt="AboutUsImage"
+            />
+            <Image
+              display={{ base: "block", sm: "none" }}
+              {...css.images}
+              src={LocationBanner}
+              alt="AboutUsImage"
+            />
           </Box>
         </Flex>
       </Box>
