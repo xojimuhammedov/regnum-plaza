@@ -111,13 +111,16 @@
 
 @media (max-width: 1300px) {
   .container {
-    max-width: 1200px !important;
+    padding: 0 40px !important;
   }
 }
 
 @media (max-width: 767.98px), (max-width: 1080px) and (orientation: portrait) {
   .home-menu {
     height: 70vh;
+  }
+  .container{
+    padding: 0 20px !important;
   }
 }
 
