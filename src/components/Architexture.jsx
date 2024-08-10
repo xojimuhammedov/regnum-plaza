@@ -176,6 +176,10 @@ const css = {
       lg: "690px",
     },
     position: "relative",
+    height: {
+      base: "343px",
+      md: "auto",
+    },
   },
   images: {
     width: "100%",
@@ -185,7 +189,7 @@ const css = {
       lg: "466px",
     },
     objectFit: {
-      base: "fill",
+      base: "contain",
       xl: "contain",
     },
   },
