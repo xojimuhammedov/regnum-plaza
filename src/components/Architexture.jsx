@@ -209,7 +209,8 @@ const css = {
     width: {
       base: "100%",
       sm: "290px",
-      lg: "540px",
+      lg: "450px",
+      xl: "540px",
     },
     padding: {
       base: "16px 24px",
@@ -236,7 +237,8 @@ const css = {
     fontSize: {
       base: "14px",
       sm: "12px",
-      lg: "20px",
+      lg: "16px",
+      xl: "20px",
     },
     fontStyle: "normal",
     lineHeight: {

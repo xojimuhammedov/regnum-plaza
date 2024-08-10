@@ -53,11 +53,13 @@ const css = {
   title: {
     fontSize: {
       base: "24px",
-      lg: "40px",
+      lg: "36px",
+      xl: "40px",
     },
     lineHeight: {
       base: "32px",
-      lg: "48px",
+      lg: "42px",
+      xl: "48px",
     },
     fontWeight: "600 !important",
   },
@@ -65,11 +67,6 @@ const css = {
     background: "#F6F6F4",
     borderRadius: "32px",
     padding: "4px",
-    // height: {
-    //   base: "40px",
-    //   sm: "48px",
-    //   md: "64px",
-    // },
     alignItems: "center",
     gap: {
       base: "20px",
