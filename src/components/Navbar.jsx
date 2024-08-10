@@ -9,10 +9,10 @@ function Navbar() {
     <Box className="navbar-menu">
       <Box className="container">
         <Flex {...css.list}>
-          <Flex gap={"50px"} align={"center"}>
+          <Flex gap={{ base: "36px", xl: "50px" }} align={"center"}>
             <Link href="/">
               <Image
-                width={{ base: "130px", lg: "170px" }}
+                width={{ base: "130px", lg: "150px", xl: "170px" }}
                 src={RegnumPlaza}
                 alt="RegnumPlaza"
               />
@@ -78,7 +78,7 @@ const css = {
     fontSize: {
       base: "16px",
       md: "12px",
-      lg:"14px",
+      lg: "14px",
       xl: "15px",
     },
     lineHeight: "20px",
