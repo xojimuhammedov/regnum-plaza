@@ -1,8 +1,12 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import AboutUsImage from "../assets/contacts.png";
 import LocationBanner from "../assets/location-banner.png";
+import { useState } from "react";
+import ScrollTrigger from "react-scroll-trigger";
+import CountUp from "react-countup";
 
 function AboutUs() {
+  const [count, setCount] = useState(false);
   return (
     <Box id="company" {...css.box}>
       <Box className="container">
@@ -28,18 +32,45 @@ function AboutUs() {
               Biz hayot uchun qulay makon barpo etmoqdamiz, 24/7 sifatli servis
               va maishiy masalalarda kafolatlangan yordam taqdim etamiz
             </Text>
-            <Flex gap={"16px"} mt={"32px"}>
-              <Box>
-                <Heading {...css.number}>1684+</Heading>
-                <Text {...css.subname}>Oila bizning uylarda yashamoqda</Text>
-              </Box>
-              <Box>
-                <Heading {...css.number}>188 430+ m</Heading>
-                <Text {...css.subname}>
-                  Xonadonlar qurib bitkazilib o‘z egalariga topshirildi
-                </Text>
-              </Box>
-            </Flex>
+            <ScrollTrigger
+              onEnter={() => setCount(true)}
+              onExit={() => setCount(false)}>
+              <Flex gap={"16px"} mt={"32px"}>
+                <Box>
+                  <Heading {...css.number}>
+                    {count && (
+                      <CountUp
+                        className="static-number"
+                        start={1500}
+                        duration={2.75}
+                        separator=" "
+                        end="1684"
+                        delay={0}
+                      />
+                    )}
+                  </Heading>
+                  <Text {...css.subname}>Oila bizning uylarda yashamoqda</Text>
+                </Box>
+                <Box>
+                  <Heading {...css.number}>
+                    {count && (
+                      <CountUp
+                        className="static-number"
+                        start={188000}
+                        duration={2.75}
+                        separator=" "
+                        end="188430"
+                        delay={0}
+                      />
+                    )}{" "}
+                    m<sup>2</sup>
+                  </Heading>
+                  <Text {...css.subname}>
+                    Xonadonlar qurib bitkazilib o‘z egalariga topshirildi
+                  </Text>
+                </Box>
+              </Flex>
+            </ScrollTrigger>
           </Box>
           <Box {...css.image}>
             <Image
