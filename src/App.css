@@ -109,6 +109,13 @@
   }
 }
 
+@media (max-width: 1500px) {
+  .container {
+    padding: 0 70px !important;
+    max-width: 100% !important;
+  }
+}
+
 @media (max-width: 1400px) {
   .container {
     padding: 0 60px !important;
